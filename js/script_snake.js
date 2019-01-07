@@ -17,7 +17,7 @@ window.onload = function() {
   let score;
   let timeOut;
 
-  // TEST SON // -> Branch test
+  // variables son
 
 let dead = new Audio();
 let eat = new Audio();
@@ -33,7 +33,7 @@ right.src = "audio/right.mp3";
 left.src = "audio/left.mp3";
 down.src = "audio/down.mp3";
 
-/////////////////////////////////////
+//////////////
 
   init();
 
