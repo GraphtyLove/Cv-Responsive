@@ -35,6 +35,11 @@ down.src = "audio/down.mp3";
 
 //////////////
 
+// Variables pommes ///
+const foodImg = new Image();
+foodImg.src = "img/food.png";
+///////////////////////////////////
+
   init();
 
   function init() {
@@ -250,11 +255,7 @@ down.src = "audio/down.mp3";
       const x = this.position[0] * blockSize + radius; // je défini la position x comme pour un rectangle, et j'ajoute le rayon pour que la pomme soit centrée
       const y = this.position[1] * blockSize + radius;
       ctx.save();
-      ctx.fillStyle = '#ff0000';
-      ctx.beginPath();
-      ctx.arc(x, y, radius, 0, Math.PI * 2, true);
-      ctx.fill();
-
+      ctx.drawImage(foodImg,x,y );
       ctx.restore();
     };
 
