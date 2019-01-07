@@ -17,6 +17,8 @@ window.onload = function() {
   let score;
   let timeOut;
 
+  LOLOLcheck
+
   init();
 
   function init() {
