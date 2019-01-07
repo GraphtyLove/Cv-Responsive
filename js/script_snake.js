@@ -17,7 +17,23 @@ window.onload = function() {
   let score;
   let timeOut;
 
-  LOLOLcheck
+  // TEST SON // -> Branch test
+
+let dead = new Audio();
+let eat = new Audio();
+let up = new Audio();
+let right = new Audio();
+let left = new Audio();
+let down = new Audio();
+
+dead.src = "audio/dead.mp3";
+eat.src = "audio/eat.mp3";
+up.src = "audio/up.mp3";
+right.src = "audio/right.mp3";
+left.src = "audio/left.mp3";
+down.src = "audio/down.mp3";
+
+/////////////////////////////////////
 
   init();
 
@@ -49,7 +65,9 @@ window.onload = function() {
     } else {
       if (BeCodeSnake.isEatingApple(applee)) {
         // Quand le serpent mange la pomme:
+        eat.play();
         score += 1;
+        
         BeCodeSnake.ateApple = true;
 
         do {
@@ -76,6 +94,7 @@ window.onload = function() {
 
   // GAME OVER
   function gameOver() {
+    
     ctx.save();
     ctx.font = 'bold 70px sans-serif';
     ctx.fillStyle = '#000';
@@ -99,7 +118,7 @@ window.onload = function() {
     );
     ctx.strokeText(`Votre score est de :  ${score}`, centreX, centreY - 160);
     ctx.fillText(`Votre score est de :  ${score}`, centreX, centreY - 160);
-
+    dead.play();
     ctx.restore();
   }
 
@@ -266,15 +285,19 @@ window.onload = function() {
     switch (key) {
       case 37: // 37 = flèche gauche
         newDirection = 'left';
+        left.play();
         break;
       case 38: // 38 = flèche du dessus
         newDirection = 'up';
+        up.play();
         break;
       case 39: // 39 = flèche droite
         newDirection = 'right';
+        right.play();
         break;
       case 40: // 40 = flèche du bas
         newDirection = 'down';
+        down.play();
         break;
       case 32:
         launch();
