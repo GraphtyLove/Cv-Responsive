@@ -1,9 +1,15 @@
-# Cv-Responsive
+# C.V Template
+
+## What?
 A responsive C.V. website.
 
-This is a responsive website for intruduce yourself.
-This is made with Html/Css, bootstrap and a some JavaScript.
+## Why?
+Learning html and css + responsivity.
 
-Take a look -> https://graphtylove.github.io/Cv-Responsive/ 
+## How?
+This is made with **Html/Css**, **bootstrap** and a some **JavaScript**.
+
+## Screenshot
+![Screenshot of the site](screenshot-site.png)
 
 Have fun with it! :)
